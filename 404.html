@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Skill Bridge 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background: var(--bg-body);
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .error-msg {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        .error-desc {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="error-page">
+        <div class="error-code">404</div>
+        <h1 class="error-msg">Oops! Page Not Found</h1>
+        <p class="error-desc">The page you are looking for might have been removed, had its name changed, or is
+            temporarily unavailable.</p>
+        <a href="index.html" class="btn btn-primary">Go Back Home</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
