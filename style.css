@@ -235,7 +235,8 @@ h4 {
 }
 
 /* Base logo image styling */
-.logo img {
+.logo img,
+.logo-img {
     height: 42px;
     width: auto;
     display: block;
