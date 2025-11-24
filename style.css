@@ -100,11 +100,8 @@ h4 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    position: relative;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
 }
+
 
 .section-title::after {
     content: '';
@@ -236,6 +233,40 @@ h4 {
 .theme-toggle:hover {
     background: var(--bg-surface);
 }
+
+/* Base logo image styling */
+.logo img {
+    height: 42px;
+    width: auto;
+    display: block;
+}
+
+/* Make it pop on LIGHT mode (since your logo is mostly white) */
+html[data-theme="light"] .logo img {
+    background: rgba(15, 23, 42, 0.9);
+    /* dark navy pill */
+    padding: 4px 16px;
+    border-radius: 999px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.35);
+}
+
+/* In DARK mode keep it cleaner, just a subtle glow */
+html[data-theme="dark"] .logo img {
+    background: transparent;
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.7));
+}
+
+
+/* Only the active day's schedule is visible */
+.schedule-content {
+    display: none;
+}
+
+.schedule-content.active {
+    display: block;
+}
+
+
 
 /* Mobile Menu */
 .hamburger {

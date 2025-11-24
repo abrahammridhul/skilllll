@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => revealObserver.observe(el));
 
     // --- Countdown Timer ---
-    const countDownDate = new Date("Nov 25, 2025 09:00:00").getTime();
+    const countDownDate = new Date("Jan 23, 2026 09:00:00").getTime();
 
     const updateCountdown = setInterval(() => {
         const now = new Date().getTime();
